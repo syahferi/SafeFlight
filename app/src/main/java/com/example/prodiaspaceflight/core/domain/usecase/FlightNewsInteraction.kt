@@ -7,7 +7,15 @@ import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class FlightNewsInteraction @Inject constructor(private val flightNewsRepository: IFlightNewsRepository) : FlightNewsUseCase {
-    override fun getFlightNews(): Flow<Resource<List<FlightNews>>> {
-        return flightNewsRepository.getFlightNews()
+    override fun getArticles(): Flow<Resource<List<FlightNews>>> {
+        return flightNewsRepository.getArticles()
+    }
+
+    override fun getBlogs(): Flow<Resource<List<FlightNews>>> {
+        return flightNewsRepository.getBlogs()
+    }
+
+    override fun getReports(): Flow<Resource<List<FlightNews>>> {
+        return flightNewsRepository.getReports()
     }
 }

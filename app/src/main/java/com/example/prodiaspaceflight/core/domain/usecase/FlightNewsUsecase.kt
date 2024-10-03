@@ -5,5 +5,7 @@ import com.example.prodiaspaceflight.core.domain.model.FlightNews
 import kotlinx.coroutines.flow.Flow
 
 interface FlightNewsUseCase {
-    fun getFlightNews(): Flow<Resource<List<FlightNews>>>
+    fun getArticles(): Flow<Resource<List<FlightNews>>>
+    fun getBlogs(): Flow<Resource<List<FlightNews>>>
+    fun getReports(): Flow<Resource<List<FlightNews>>>
 }
