@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.coroutines.android)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.hilt.android)
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
